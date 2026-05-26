@@ -421,24 +421,6 @@ Response:
 
 ---
 
-## Resume Bullets
-
-```
-• Built a subscription lifecycle backend using Spring Boot REST APIs and PostgreSQL —
-  managing plan transitions (active, paused, cancelled, upgraded) and enforcing
-  entitlement rules per tier.
-
-• Decoupled payment events from subscription state updates using Kafka: on a successful
-  payment event, a consumer updates PostgreSQL and invalidates the Redis cache,
-  ensuring consistency.
-
-• Served entitlement checks from Redis cache to avoid hitting PostgreSQL on every API
-  request; cache is populated on login and invalidated on plan change — load-tested to
-  5,000+ req/s with JMeter.
-```
-
----
-
 ## License
 
 MIT
